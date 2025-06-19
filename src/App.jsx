@@ -1,11 +1,29 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+// import { useEffect, useState } from 'react'
+// import { useReducer } from 'react';
 import './App.css'
-import IntervalCounterClassComponent from './components/IntervalCounterClassComponent'
+import { CounterProvider } from './components/ContextCounter';
+import UseReducerDataFetchingWithoutUseReducerFunctionalComponent from './components/UseReducerDataFetchingWithoutUseReducerFunctionalComponent';
+import UseReducerWithUseContextFunctionalComponentA from './components/UseReducerWithUseContextFunctionalComponentA';
+// import IntervalCounterClassComponent from './components/IntervalCounterClassComponent'
 // import ConditionalUpdateRenderClassComponent from './components/ConditionalUpdateRenderClassComponent'
 // import MouseEventClassComponent from './components/MouseEventClassComponent'
-import UseEffectCleanUpFunctionalComponent from './components/UseEffectCleanUpFunctionalComponent'
+// import UseEffectCleanUpFunctionalComponent from './components/UseEffectCleanUpFunctionalComponent'
+// import UseEffectDependencyFunctionalComponent from './components/UseEffectDependencyFunctionalComponent'
+// import UseEffectToFetchDataByIdFunctionalComponent from './components/UseEffectToFetchDataByIdFunctionalComponent'
+// import UseEffectToFetchDataFunctionalComponent from './components/UseEffectToFetchDataFunctionalComponent'
+// import UseEffectToFetchDataOnClickFunctionalComponent from './components/UseEffectToFetchDataOnClickFunctionalComponent'
+// import axios from 'axios'
+// import ContextExampleClassComponent from './components/ContextExampleClassComponent'
+// import { UserListProvider } from './components/ContextUserList';
+// import { PostListProvider } from './components/ContextPostList';
+// import UseContextExampleFunctionalComponent from './components/UseContextExampleFunctionalComponent';
+// import UseReducerCounterSimpleStateAndActionFunctionalComponent from './components/UseReducerCounterSimpleStateAndActionFunctionalComponent';
+// import UseReducerCounterComplexStateAndActionFunctionalComponent from './components/UseReducerCounterComplexStateAndActionFunctionalComponentOne';
+// import UseReducerCounterComplexStateAndActionFunctionalComponentTwo from './components/UseReducerCounterComplexStateAndActionFunctionalComponentTwo';
+// import UseReducerMultipleUseReducerCounterFunctionalComponent from './components/UseReducerMultipleUseReducerCounterFunctionalComponent';
 // import UseEffectConditionallyExecutedFunctionalComponent from './components/UseEffectConditionallyExecutedFunctionalComponent'
 // import CounterClassComponent from './components/CounterClassComponent'
 // import UseEffectCounterFunctionalComponent from './components/UseEffectCounterFunctionalComponent'
@@ -14,8 +32,49 @@ import UseEffectCleanUpFunctionalComponent from './components/UseEffectCleanUpFu
 // import UseStateCounterFunctionalComponent from './components/UseStateCounterFunctionalComponent'
 // import UseStateObjectFunctionalComponent from './components/UseStateObjectFunctionalComponent'
 
+
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case 'increment':
+//       return state + 1;
+//     case 'decrement':
+//       return state - 1;
+//     case 'reset':
+//       return initialState;
+//     default:
+//       return state;
+//   }
+// }
 function App() {
   // const [count, setCount] = useState(0)
+  // const [userList, setUserList] = useState([])
+  // const [postList, setPostList] = useState([])
+
+  // const [count, dispatch] = useReducer(reducer, initialState)
+
+  // useEffect(() => {
+
+  //   //get userList
+  //   axios.get('https://jsonplaceholder.typicode.com/users').then((res) => {
+  //     console.log(res?.data);
+  //     setUserList(res?.data)
+  //   }).catch((err) => {
+  //     console.log(err);
+  //   })
+
+  // }, [])
+
+  // useEffect(() => {
+  //   //get postList
+  //   axios.get('https://jsonplaceholder.typicode.com/posts').then((res) => {
+  //     console.log(res?.data);
+  //     setPostList(res?.data)
+  //   }).catch((err) => {
+  //     console.log(err);
+  //   })
+  // }, [])
+
 
   return (
     <>
@@ -49,7 +108,35 @@ function App() {
       {/* <MouseEventClassComponent /> */}
       {/* <UseEffectOnlyOnceExecutedFunctionalComponent /> */}
       {/* <UseEffectCleanUpFunctionalComponent /> */}
-      <IntervalCounterClassComponent />
+      {/* <IntervalCounterClassComponent /> */}
+      {/* <UseEffectDependencyFunctionalComponent /> */}
+      {/* <UseEffectToFetchDataFunctionalComponent /> */}
+      {/* <UseEffectToFetchDataByIdFunctionalComponent /> */}
+      {/* <UseEffectToFetchDataOnClickFunctionalComponent /> */}
+      {/* {userList?.length && postList?.length && (
+        <UserListProvider value={userList}>
+          <PostListProvider value={postList}>
+            <ContextExampleClassComponent />
+          </PostListProvider>
+        </UserListProvider>
+      )
+      } */}
+      {/* {userList?.length && postList?.length && (
+        <UserListProvider value={userList}>
+          <PostListProvider value={postList}>
+            <UseContextExampleFunctionalComponent />
+          </PostListProvider>
+        </UserListProvider>
+      )} */}
+      {/* <UseReducerCounterSimpleStateAndActionFunctionalComponent /> */}
+      {/* <UseReducerCounterComplexStateAndActionFunctionalComponent /> */}
+      {/* <UseReducerCounterComplexStateAndActionFunctionalComponentTwo /> */}
+      {/* <UseReducerMultipleUseReducerCounterFunctionalComponent /> */}
+      {/* <CounterProvider value={{ countState: count, countDispatch: dispatch }}>
+        <UseReducerWithUseContextFunctionalComponentA />
+      </CounterProvider > */}
+      <UseReducerDataFetchingWithoutUseReducerFunctionalComponent />
+
     </>
   )
 }
