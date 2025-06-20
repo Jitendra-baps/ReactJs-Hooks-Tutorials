@@ -22,6 +22,7 @@ function UseReducerDataFetchingWithoutUseReducerFunctionalComponent() {
     }, [])
     return (
         <>
+            <h3>This is an example of how to data fetch using useState and useEffect in Functional Component</h3>
             {loading ? <h4>...Loading</h4> : <li>{post.title}</li>}
             {error ? error : null}
         </>

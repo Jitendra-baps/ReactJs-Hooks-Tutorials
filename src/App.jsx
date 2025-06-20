@@ -4,9 +4,18 @@
 // import { useEffect, useState } from 'react'
 // import { useReducer } from 'react';
 import './App.css'
-import { CounterProvider } from './components/ContextCounter';
-import UseReducerDataFetchingWithoutUseReducerFunctionalComponent from './components/UseReducerDataFetchingWithoutUseReducerFunctionalComponent';
-import UseReducerWithUseContextFunctionalComponentA from './components/UseReducerWithUseContextFunctionalComponentA';
+import CustomHookCounterFunctionalComponent from './components/CustomHookCounterFunctionalComponent'
+import CustomHookDocumentTitleCountFunctionalComponent from './components/CustomHookDocumentTitleCountFunctionalComponent'
+import CustomHookInputControlFunctionalComponent from './components/CustomHookInputControlFunctionalComponent'
+import UseRefIntervalIncrementalCounterFunctionalComponent from './components/UseRefIntervalIncrementalCounterFunctionalComponent'
+// import UseCallbackExampleLayoutFunctionalComponent from './components/UseCallbackExampleLayoutFunctionalComponent'
+// import UseMemoExampleFunctionalComponent from './components/UseMemoExampleFunctionalComponent'
+// import UseReducerDataFetchingWithUseReducerFunctionalComponent from './components/UseReducerDataFetchingWithUseReducerFunctionalComponent'
+// import UseRefInputFocusFunctionalComponent from './components/UseRefInputFocusFunctionalComponent'
+// import UseRefIntervalIncrementalCounterWithoutUseRefClassComponent from './components/UseRefIntervalIncrementalCounterWithoutUseRefClassComponent'
+// import { CounterProvider } from './components/ContextCounter';
+// import UseReducerDataFetchingWithoutUseReducerFunctionalComponent from './components/UseReducerDataFetchingWithoutUseReducerFunctionalComponent';
+// import UseReducerWithUseContextFunctionalComponentA from './components/UseReducerWithUseContextFunctionalComponentA';
 // import IntervalCounterClassComponent from './components/IntervalCounterClassComponent'
 // import ConditionalUpdateRenderClassComponent from './components/ConditionalUpdateRenderClassComponent'
 // import MouseEventClassComponent from './components/MouseEventClassComponent'
@@ -135,8 +144,16 @@ function App() {
       {/* <CounterProvider value={{ countState: count, countDispatch: dispatch }}>
         <UseReducerWithUseContextFunctionalComponentA />
       </CounterProvider > */}
-      <UseReducerDataFetchingWithoutUseReducerFunctionalComponent />
-
+      {/* <UseReducerDataFetchingWithoutUseReducerFunctionalComponent /> */}
+      {/* <UseReducerDataFetchingWithUseReducerFunctionalComponent /> */}
+      {/* <UseCallbackExampleLayoutFunctionalComponent /> */}
+      {/* <UseMemoExampleFunctionalComponent /> */}
+      {/* <UseRefInputFocusFunctionalComponent /> */}
+      {/* <UseRefIntervalIncrementalCounterWithoutUseRefClassComponent /> */}
+      {/* <UseRefIntervalIncrementalCounterFunctionalComponent /> */}
+      {/* <CustomHookDocumentTitleCountFunctionalComponent /> */}
+      {/* <CustomHookCounterFunctionalComponent /> */}
+      <CustomHookInputControlFunctionalComponent />
     </>
   )
 }
