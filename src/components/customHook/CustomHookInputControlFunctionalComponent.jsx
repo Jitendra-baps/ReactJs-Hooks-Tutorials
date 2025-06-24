@@ -1,5 +1,5 @@
 import React from 'react'
-import useInputControl from '../hooks/useInputControl';
+import useInputControl from '../../hooks/useInputControl';
 
 function CustomHookInputControlFunctionalComponent() {
   const [firstName, firstNameBind, firstNameReset] = useInputControl()

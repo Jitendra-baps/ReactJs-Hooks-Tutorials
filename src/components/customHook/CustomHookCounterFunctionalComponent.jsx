@@ -1,5 +1,5 @@
 import React from 'react'
-import useCounterHook from '../hooks/useCounterHook'
+import useCounterHook from '../../hooks/useCounterHook'
 
 function CustomHookCounterFunctionalComponent() {
     // const [count, setCount] = useState(10)

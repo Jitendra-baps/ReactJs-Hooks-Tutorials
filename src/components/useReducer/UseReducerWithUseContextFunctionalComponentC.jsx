@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { CounterContext } from './ContextCounter'
+import { CounterContext } from '../../context/ContextCounter'
 
 function UseReducerWithUseContextFunctionalComponentC() {
     const counterContext = useContext(CounterContext)

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
-import { UserListContext } from './ContextUserList'
-import { PostListContext } from './ContextPostList'
+import { UserListContext } from '../../context/ContextUserList'
+import { PostListContext } from '../../context/ContextPostList'
+
 
 function UseContextExampleFunctionalComponent() {
     const userList = useContext(UserListContext)

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { UserListConsumer } from './ContextUserList'
-import { PostListConsumer } from './ContextPostList'
+import { UserListConsumer } from '../context/ContextUserList'
+import { PostListConsumer } from '../context/ContextPostList'
+
 
 class ContextExampleClassComponent extends Component {
     render() {
